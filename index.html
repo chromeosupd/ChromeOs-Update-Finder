@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ChromeOS Recovery Image URL Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>ChromeOS Recovery Image URL Generator</h1>
+    <form id="generatorForm">
+      <label for="version">ChromeOS Version:</label>
+      <input type="text" id="version" name="version" placeholder="Enter ChromeOS version (e.g. 132)" required>
+
+      <label for="board">Board Name:</label>
+      <input type="text" id="board" name="board" placeholder="Enter board name (e.g. nissa)" required>
+
+      <button type="submit">Generate URL</button>
+    </form>
+
+    <div id="result">
+      <h2>Generated URL:</h2>
+      <p id="url"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
